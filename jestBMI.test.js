@@ -1,8 +1,5 @@
-function calculateBMI(weight,height){
-    return weight / (height * height);
-}
+const calculateBMI = require("./bmi_calculator");
 
-
-test('Checks if weight / (height * height) equals BMI', () =>{
-    expect(calculateBMI(71,1.7018)).toBe(24.515531321104966);
-});
+test('your BMI is normal', () =>{
+    expect(calculateBMI(71,1.7018)).toBe(24.515531321104966)
+})

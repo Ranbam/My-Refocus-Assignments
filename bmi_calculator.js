@@ -15,3 +15,5 @@ if (bmi <18.5){
 } else {
     console.log('Your BMI is ' + ', so you are obeses.');
 }
+
+module.exports = calculateBMI;
